@@ -11,15 +11,12 @@
     </title>
     <link rel="shortcut icon" href="{{ Theme::url('favicon.png') }}">
 
-    {!! Theme::style('css/style.css') !!}
     {!! Theme::style('css/vendor.bundle.css') !!}
+    {!! Theme::style('css/style.css') !!}
     @stack('css-stack')
 </head>
 <body>
 
-{{--@auth
-    @include('partials.admin-bar')
-@endauth--}}
 @include('partials.navigation')
 
 @yield('content')

@@ -85,5 +85,6 @@
         </div>
     </div>
     <!-- #end Navbar -->
+    @yield('breadcrumb')
 </header>
 <!-- End Header -->
