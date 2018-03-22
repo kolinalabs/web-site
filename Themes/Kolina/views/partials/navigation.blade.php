@@ -48,9 +48,7 @@
             </div>
             <!-- MainNav -->
             <nav class="navbar-collapse collapse" id="mainnav">
-                <ul class="nav navbar-nav">
-                    {!! Menu::get('Principal') !!}
-                </ul>
+                {!! Menu::get('Principal') !!}
             </nav>
             <!-- #end MainNav -->
         </div>
