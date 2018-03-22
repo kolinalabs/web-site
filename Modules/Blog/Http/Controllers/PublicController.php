@@ -3,6 +3,7 @@
 namespace Modules\Blog\Http\Controllers;
 
 use Illuminate\Support\Facades\App;
+use Modules\Blog\Entities\Post;
 use Modules\Blog\Repositories\PostRepository;
 use Modules\Core\Http\Controllers\BasePublicController;
 
@@ -21,7 +22,8 @@ class PublicController extends BasePublicController
 
     public function index()
     {
-        $posts = $this->post->allTranslatedIn(App::getLocale());
+        //$posts = $this->post->allTranslatedIn(App::getLocale())->forPage(1, 6);
+        $posts = Post::paginate(6);
 
         return view('blog.index', compact('posts'));
     }
