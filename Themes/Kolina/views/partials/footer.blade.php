@@ -35,10 +35,8 @@
                     <div class="wgs wgs-footer wgs-menu">
                         <h5 class="wgs-title">Links</h5>
                         <div class="wgs-content">
-                            <ul class="menu">
-                                {{--{{ range .Site.Menus.main }}
-                                <li><a href="{{ .URL }}" 1>{{ .Name }}</a></li>
-                                {{ end }}--}}
+                            <ul class="menu"
+                                {!! Menu::get('Principal') !!}
                             </ul>
                         </div>
                     </div>

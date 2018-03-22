@@ -48,38 +48,7 @@
             </div>
             <!-- MainNav -->
             <nav class="navbar-collapse collapse" id="mainnav">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown active"><a href="index.html" class="dropdown-toggle">Home</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="index.html">Home - Default</a></li>
-                            <li><a href="index-v2.html">Home - V2</a></li>
-                            <li><a href="index-v3.html">Home - V3</a></li>
-                            <li><a href="index-v4.html">Home - V4</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="about.html">About Us <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="testimonial.html">Testimonial</a></li>
-                            <li><a href="teams.html">Teams / Experts</a></li>
-                            <li><a href="faqs.html">FAQ's</a></li>
-                            <li><a href="shortcode.html">Shortcode</a></li>
-                            <li><a href="typography.html">Typography</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="services.html" class="dropdown-toggle">Consulting Services <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="services.html">Services List</a></li>
-                            <li><a href="services-alter.html">Services List - Alter</a></li>
-                            <li><a href="service-single.html">Service Single</a></li>
-                            <li><a href="service-single-alter.html">Service Single - Alter</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li class="quote-btn"><a class="btn" href="get-a-quote.html">Free Consultant</a></li>
-                </ul>
+                {!! Menu::get('Principal') !!}
             </nav>
             <!-- #end MainNav -->
         </div>
