@@ -101,8 +101,14 @@ trait TaggableTrait
         $entityTags = $this->tags->pluck($type)->all();
 
         // Prepare the tags to be added and removed
-        $tagsToAdd = array_diff($tags, $entityTags);
-        $tagsToDel = array_diff($entityTags, $tags);
+
+        $tagsToAdd = [];
+        $tagsToDel = [];
+
+        if (is_array($tags)) {
+            $tagsToAdd = array_diff($tags, $entityTags);
+            $tagsToDel = array_diff($entityTags, $tags);
+        }
 
         // Detach the tags
         if (count($tagsToDel) > 0) {
