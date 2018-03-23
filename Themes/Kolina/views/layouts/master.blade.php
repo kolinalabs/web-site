@@ -15,13 +15,14 @@
     {!! Theme::style('css/style.css') !!}
     @stack('css-stack')
 </head>
-<body>
+<body class="site-body style-v1">
 
 @include('partials.navigation')
 
 @yield('content')
 @include('partials.footer')
 
+{!! Theme::script('js/gmaps.js') !!}
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYoHWIujTe-tHh7lPbpHoeCU5F9iOjD_8"></script>
 {!! Theme::script('js/jquery.bundle.js') !!}
 {!! Theme::script('js/script.js') !!}

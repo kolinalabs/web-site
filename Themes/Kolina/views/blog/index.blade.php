@@ -1,10 +1,11 @@
 @extends('layouts.master')
 
 @section('title')
-    Postagens - Blog | @parent
+    Blog | @parent
 @stop
 
 @section('content')
+
     <div class="banner banner-static has-bg bg-primary">
         <div class="banner-cpn">
             <div class="container">
@@ -17,7 +18,7 @@
                     <div class="page-breadcrumb">
                         <ul class="breadcrumb">
                             <li><a href="{{ route('homepage') }}">Home</a></li>
-                            <li class="active"><span>News &amp; Events</span></li>
+                            <li class="active"><span>Blog</span></li>
                         </ul>
                     </div>
 
@@ -25,7 +26,7 @@
             </div>
         </div>
         <div class="banner-bg imagebg">
-            <img src="{{ Theme::url('image/banner-inner.jpg') }}" alt="" />
+            <img src="{{ Theme::url('img/banner-inner.jpg') }}" alt="" />
         </div>
     </div>
 
