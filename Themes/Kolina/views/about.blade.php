@@ -35,7 +35,6 @@
     <div class="section section-contents section-pad">
         <div class="container">
             <div class="content row">
-
                 <div class="col-sm-7 npl res-m-bttm">
                     <h2>Temos experiência para oferecer os serviços que você precisa para seguir em frente</h2>
                     <p style="text-align: justify">
@@ -45,8 +44,6 @@
                         Nossa experiência em projetos de portes distintos nos permite avaliar com eficácia a aplicabilidade de recursos e tecnologias que se encaixam às necessidades expostas.
                         Por isso, não aplicamos a mesma visão sobre diferentes contextos de projeto, embora muitos possam compartilhar de técnicas e ferramentas similares. Para nós, seu projeto é único!
                     </p>
-
-
                 </div>
                 <div class="col-sm-5 npr">
                     <img alt="" src="{{ Theme::url('img/service-f.png') }}" style="padding-top: 30px">
