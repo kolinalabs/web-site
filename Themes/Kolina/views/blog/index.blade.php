@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Blog posts | @parent
+    Postagens - Blog | @parent
 @stop
 
 @section('content')
