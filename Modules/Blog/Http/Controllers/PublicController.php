@@ -27,7 +27,7 @@ class PublicController extends BasePublicController
         $postManager = Post::query();
 
         // Posts com status publicado (published)
-        $postManager->orWhere('status', '=', 2);
+        $postManager->where('status', '=', 2);
 
         $posts = $postManager->paginate($pagination);
 
