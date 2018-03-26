@@ -7,9 +7,14 @@ $router->bind('page', function ($id) {
     return app(\Modules\Page\Repositories\PageRepository::class)->find($id);
 });
 
-$router->post('/form', [
-    'as' => 'sendEmail',
-    'uses' => 'FormController@sendEmail'
+$router->post('/contact', [
+    'as' => 'contactForm',
+    'uses' => 'FormController@contactForm'
+]);
+
+$router->post('/request', [
+    'as' => 'requestForm',
+    'uses' => 'FormController@requestForm'
 ]);
 
 $router->group(['prefix' => '/page', 'middleware' => ['api.token', 'auth.admin']], function (Router $router) {
