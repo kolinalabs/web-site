@@ -63,9 +63,15 @@
                                 </div>
                             </div>
 
+                            <?php echo \Modules\Page\Http\Controllers\Api\FormController::getCaptcha() ?>
+
                             <input type="text" class="hidden" name="form-anti-honeypot" value="">
+
                             <div class="form-results"></div>
-                            <button type="submit" class="btn solid-btn sb-h">Enviar</button>
+
+                            <div style="padding-top: 10px">
+                                <button type="submit" class="btn solid-btn sb-h">Enviar</button>
+                            </div>
                         </form>
                     </div>
 

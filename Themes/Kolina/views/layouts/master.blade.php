@@ -27,6 +27,7 @@
 {!! Theme::script('js/jquery.bundle.js') !!}
 {!! Theme::script('js/jquery.mask.js') !!}
 {!! Theme::script('js/script.js') !!}
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 <?php if (Setting::has('core::analytics-script')): ?>
     {!! Setting::get('core::analytics-script') !!}
