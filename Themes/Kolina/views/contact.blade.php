@@ -51,7 +51,7 @@
                             </div>
                             <div class="form-group row">
                                 <div class="form-field col-md-6 form-m-bttm">
-                                    <input name="contact-phone" type="text" placeholder="Telefone" class="form-control">
+                                    <input name="contact-phone" type="text" placeholder="Telefone" class="form-control phone">
                                 </div>
                                 <div class="form-field col-md-6">
                                     <input name="contact-subject" type="text" placeholder="Assunto" class="form-control">
@@ -99,20 +99,6 @@
     </div>
     <!-- End map -->
     <!-- Call Action -->
-    <div class="call-action bg-primary">
-        <div class="cta-block">
-            <div class="container">
-                <div class="content row">
-
-                    <div class="cta-sameline">
-                        <h3>Looking for a greats consultantcy for your new business?</h3>
-                        <p>Contact us today by submit a business inquiry form online.</p>
-                        <a class="btn btn-outline" href="get-a-quote.html">Contact Us</a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('partials.contact-bar')
     <!-- End Section -->
 @stop

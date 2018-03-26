@@ -53,7 +53,7 @@
                                         <input name="quote-request-email" type="email" placeholder="Email *" class="form-control required email">
                                     </div>
                                     <div class="form-field col-md-6">
-                                        <input name="quote-request-phone" type="text" placeholder="Telefone *" class="form-control required">
+                                        <input name="quote-request-phone" type="text" placeholder="Telefone *" class="form-control required phone">
                                     </div>
                                 </div>
                                 <h4>Serviços Solicitados</h4>

@@ -25,6 +25,7 @@
 {!! Theme::script('js/gmaps.js') !!}
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYoHWIujTe-tHh7lPbpHoeCU5F9iOjD_8"></script>
 {!! Theme::script('js/jquery.bundle.js') !!}
+{!! Theme::script('js/jquery.mask.js') !!}
 {!! Theme::script('js/script.js') !!}
 
 <?php if (Setting::has('core::analytics-script')): ?>
