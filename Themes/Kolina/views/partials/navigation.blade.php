@@ -32,7 +32,7 @@
     <div class="navbar navbar-primary">
         <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand" href="../../partials">
+            <a class="navbar-brand" href="{{ route('homepage') }}">
                 <img class="logo logo-dark" alt="" src="{{ Theme::url('img/logo/logo3.png') }}">
             </a>
             <!-- #end Logo -->
