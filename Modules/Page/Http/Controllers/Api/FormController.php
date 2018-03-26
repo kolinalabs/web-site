@@ -5,6 +5,7 @@ namespace Modules\Page\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use PHPMailer\PHPMailer\PHPMailer;
+use Anhskohbo\NoCaptcha\NoCaptcha;
 
 class FormController extends Controller
 {
@@ -17,8 +18,13 @@ class FormController extends Controller
     {
         $antiBot = $request->request->get('form-anti-honeypot');
 
-        if (isset($antiBot)) {
-            $response = array ('result' => "error", 'message' => 'Bot detected!');
+        if (!$this->validateCaptchaResponse($request->request->get('g-recaptcha-response'))) {
+            $response = array ('result' => "error", 'message' => 'CAPTCHA incorreto!');
+
+            return (json_encode($response));
+        }
+        else if (isset($antiBot)) {
+            $response = array ('result' => "error", 'message' => 'Bot detectado!');
 
             return (json_encode($response));
         }
@@ -85,8 +91,13 @@ class FormController extends Controller
     {
         $antiBot = $request->request->get('form-anti-honeypot');
 
-        if (isset($antiBot)) {
-            $response = array ('result' => "error", 'message' => 'Bot detected!');
+        if (!$this->validateCaptchaResponse($request->request->get('g-recaptcha-response'))) {
+            $response = array ('result' => "error", 'message' => 'CAPTCHA incorreto!');
+
+            return (json_encode($response));
+        }
+        else if (isset($antiBot)) {
+            $response = array ('result' => "error", 'message' => 'Bot detectado!');
 
             return (json_encode($response));
         }
@@ -158,5 +169,28 @@ class FormController extends Controller
                 return (json_encode($response));
             }
         }
+    }
+
+    /**
+     * @return string
+     */
+    public static function getCaptcha()
+    {
+        $secret  = getenv('CAPTCHA_SECRET');
+        $sitekey = getenv('CAPTCHA_SITEKEY');
+
+        $captcha = new NoCaptcha($secret, $sitekey);
+
+        return $captcha->display();
+    }
+
+    private function validateCaptchaResponse($captchaResponse)
+    {
+        $secret  = getenv('CAPTCHA_SECRET');
+        $sitekey = getenv('CAPTCHA_SITEKEY');
+
+        $captcha = new NoCaptcha($secret, $sitekey);
+
+       return $captcha->verifyResponse($captchaResponse);
     }
 }
