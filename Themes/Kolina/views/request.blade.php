@@ -31,6 +31,8 @@
     </div>
     <!-- End Banner -->
 
+    @include('partials.loading-modal')
+
     <div class="section section-contents section-freequote section-pad">
         <div class="container">
             <div class="row">

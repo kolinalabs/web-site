@@ -132,7 +132,13 @@
 				  	$(form).clearForm();
 				  	grecaptcha.reset();
 				  }
-				}
+				},
+                beforeSend: function(){
+					$('#loadingModal').modal('show');
+				},
+				complete: function(){
+					$('#loadingModal').modal('hide');
+                }
 			  });
 			}
 		  });
