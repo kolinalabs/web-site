@@ -1518,4 +1518,8 @@ a:hover > .feature.boxed { transform: translateY(-10px); }
 
 .demo-sample-icon hr { margin-top: 25px; margin-bottom: 25px; }
 
+textarea {
+  resize: vertical;
+}
+
 @media only screen and (max-width: 479px) { .page-typo .col-md-3.col-sm-6.col-xs-6 { width: 100%; } }
