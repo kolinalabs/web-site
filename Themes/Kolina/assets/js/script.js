@@ -128,7 +128,10 @@
 				success: function(data) {
 				  var type = (data.result==='error') ? 'alert-danger' : 'alert-success';
 				  qf_results.removeClass( 'alert-danger alert-success' ).addClass( 'alert ' + type ).html(data.message).slideDown(400);
-				  if (data.result !== 'error') { $(form).clearForm(); }
+				  if (data.result !== 'error') {
+				  	$(form).clearForm();
+				  	grecaptcha.reset();
+				  }
 				}
 			  });
 			}
@@ -148,3 +151,16 @@
 		$mapholder.on('mouseleave', function() { $(this).children().css("pointer-events", "none"); });
 	}
 })(jQuery);
+
+$(document).ready(function () {
+    var SPMaskBehavior = function (val) {
+            return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+        },
+        spOptions = {
+            onKeyPress: function(val, e, field, options) {
+                field.mask(SPMaskBehavior.apply({}, arguments), options);
+            }
+        };
+
+    $('.phone').mask(SPMaskBehavior, spOptions);
+});

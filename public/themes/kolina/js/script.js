@@ -128,7 +128,10 @@
 				success: function(data) {
 				  var type = (data.result==='error') ? 'alert-danger' : 'alert-success';
 				  qf_results.removeClass( 'alert-danger alert-success' ).addClass( 'alert ' + type ).html(data.message).slideDown(400);
-				  if (data.result !== 'error') { $(form).clearForm(); }
+				  if (data.result !== 'error') {
+				  	$(form).clearForm();
+				  	grecaptcha.reset();
+				  }
 				}
 			  });
 			}
