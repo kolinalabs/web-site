@@ -40,8 +40,7 @@
                 <div class="contact-content row">
                     <div class="drop-message col-md-7 res-m-bttm">
                         <h2 class="heading-section">Enviar Mensagem</h2>
-                        <form id="quote-contact-request" class="form-message" action="/api/form" method="post">
-                            <div class="form-results"></div>
+                        <form id="quote-contact-request" class="form-message" action="/api/contact" method="post">
                             <div class="form-group row">
                                 <div class="form-field col-md-6 form-m-bttm">
                                     <input name="contact-name" type="text" placeholder="Nome *" class="form-control required">
@@ -63,9 +62,15 @@
                                     <textarea name="contact-message" placeholder="Mensagem *" class="txtarea form-control required"></textarea>
                                 </div>
                             </div>
+
+                            <?php echo \Modules\Page\Http\Controllers\Api\FormController::getCaptcha()?>
+
+                            <input type="text" class="hidden" name="form-anti-honeypot" value="">
+                            <div class="form-results"></div>
                             <button type="submit" class="btn solid-btn sb-h">Enviar</button>
                         </form>
                     </div>
+
                     <div class="contact-details col-md-4 col-md-offset-1">
                         <h3 class="heading-section">Endereço de Contato</h3>
                         <ul class="contact-list">

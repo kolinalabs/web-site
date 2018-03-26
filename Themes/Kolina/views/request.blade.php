@@ -39,24 +39,24 @@
 
                     <div class="quote-list col-md-7 res-m-bttm-lg">
                         <div class="quote-group">
-                            <form id="quote-contact-request" class="form-quote" action="" method="post">
+                            <form id="quote-contact-request" class="form-quote" action="/api/request" method="post">
                                 <div class="form-group row">
                                     <div class="form-field col-md-6 form-m-bttm">
-                                        <input name="quote-request-name" type="text" placeholder="Your Name *" class="form-control required">
+                                        <input name="quote-request-name" type="text" placeholder="Nome *" class="form-control required">
                                     </div>
                                     <div class="form-field col-md-6">
-                                        <input name="quote-request-company" type="text" placeholder="Your Company" class="form-control">
+                                        <input name="quote-request-company" type="text" placeholder="Empresa" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="form-field col-md-6 form-m-bttm">
-                                        <input name="quote-request-email" type="email" placeholder="Email Address *" class="form-control required email">
+                                        <input name="quote-request-email" type="email" placeholder="Email *" class="form-control required email">
                                     </div>
                                     <div class="form-field col-md-6">
-                                        <input name="quote-request-phone" type="text" placeholder="Phone Number *" class="form-control required">
+                                        <input name="quote-request-phone" type="text" placeholder="Telefone *" class="form-control required">
                                     </div>
                                 </div>
-                                <h4>Service You Interested</h4>
+                                <h4>Serviços Solicitados</h4>
                                 <div class="form-group row">
                                     <ul class="form-field clearfix">
                                         <li class="col-sm-4"><input type="checkbox" name="quote-request-interest[]" value="Business Consulting"> <span>Business Consulting</span></li>
@@ -71,57 +71,56 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="form-field col-md-6">
-                                        <p>Best Time to Reach</p>
+                                        <p>Melhor Horário para Contato</p>
                                         <select name="quote-request-reach">
-                                            <option value="">Please select</option>
-                                            <option value="09am-12pm">09 AM - 12 PM</option>
-                                            <option value="12pm-03pm">12 PM - 03 PM</option>
-                                            <option value="03pm-06pm">03 PM - 06 PM</option>
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="08:00 - 12:00">08:00 - 12:00</option>
+                                            <option value="13:30 - 15:00">13:30 - 15:00</option>
+                                            <option value="15:00 - 18:30">15:00 - 18:30</option>
                                         </select>
                                     </div>
                                     <div class="form-field col-md-6">
-                                        <p>Hear About Us</p>
+                                        <p>Como Nos Encontrou</p>
                                         <select name="quote-request-hear">
-                                            <option value="">Please select</option>
-                                            <option value="Friends">Friends</option>
+                                            <option value="">Selecione uma opção</option>
+                                            <option value="Amigos">Amigos</option>
                                             <option value="Facebook">Facebook</option>
                                             <option value="Google">Google</option>
-                                            <option value="Collegue">Collegue</option>
-                                            <option value="Others">Others</option>
+                                            <option value="Colegas">Colegas</option>
+                                            <option value="Outros">Outros</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="form-field col-md-12">
-                                        <textarea name="quote-request-message" placeholder="Messages / Comments *" class="txtarea form-control required"></textarea>
+                                        <textarea name="quote-request-message" placeholder="Mensagem / Comentário *" class="txtarea form-control required"></textarea>
                                     </div>
                                 </div>
+
                                 <input type="text" class="hidden" name="form-anti-honeypot" value="">
-                                <button type="submit" class="btn">Submit</button>
                                 <div class="form-results"></div>
+                                <button type="submit" class="btn">Enviar</button>
                             </form>
                         </div>
                     </div>
 
                     <div class="contact-details col-md-4 col-md-offset-1">
-                        <h3 class="heading-section">Contact <br>Information</h3>
+                        <h3 class="heading-section">Endereço de Contato</h3>
                         <ul class="contact-list">
                             <li><em class="fa fa-map" aria-hidden="true"></em>
-                                <span>1234 Sed ut perspiciatis Road, <br>At vero eos, D58 8975, London.</span>
+                                <span>Rua Xavier da Silva, 1340, <br>Guarapuava, PR - 85010-220 - Brasil.</span>
                             </li>
                             <li><em class="fa fa-phone" aria-hidden="true"></em>
-                                <span>Toll Free : (123) 4567 8910<br>
-								Telephone : (123) 1234 5678</span>
+                                <span>Telefone : +55 42 99867-6638</span>
                             </li>
                             <li><em class="fa fa-envelope" aria-hidden="true"></em>
-                                <span>Email : <a href="#">info@sitename.com</a></span>
+                                <span>Email : <a href="#">si@kolinalabs.com</a></span>
                             </li>
                             <li>
-                                <em class="fa fa-clock-o" aria-hidden="true"></em><span>Sat - Thu: 8AM - 7PM </span>
+                                <em class="fa fa-clock-o" aria-hidden="true"></em><span>Seg - Sex: 08:00 - 18:30 </span>
                             </li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </div>
