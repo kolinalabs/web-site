@@ -2,6 +2,12 @@
 
 namespace Modules\Blog\Http\Controllers;
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
+use Doctrine\DBAL\Query\QueryBuilder;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\App;
 use Modules\Blog\Entities\Post;
 use Modules\Blog\Repositories\PostRepository;
@@ -20,10 +26,16 @@ class PublicController extends BasePublicController
         $this->post = $post;
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        //$posts = $this->post->allTranslatedIn(App::getLocale())->forPage(1, 6);
-        $posts = Post::paginate(6);
+        $pagination = 6;
+
+        $postManager = Post::query();
+
+        // Posts com status publicado (published)
+        $postManager->orWhere('status', '=', 2);
+
+        $posts = $postManager->paginate($pagination);
 
         return view('blog.index', compact('posts'));
     }
