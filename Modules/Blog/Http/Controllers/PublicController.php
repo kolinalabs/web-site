@@ -33,6 +33,18 @@ class PublicController extends BasePublicController
             $filterValues = explode(',', $categories);
             $postManager->whereIn('category_id', $filterValues);
         }
+        if ($dateMin = $request->get('dateMin')) {
+            if ($this->validateDate($dateMin, 'd-m-Y')) {
+                $filterValue = date_create_from_format('d-m-Y', $dateMin);
+                $postManager->whereDate('created_at', '>=', $filterValue);
+            }
+        }
+        if ($dateMax = $request->get('dateMax')) {
+            if ($this->validateDate($dateMax, 'd-m-Y')) {
+                $filterValue = date_create_from_format('d-m-Y', $dateMax);
+                $postManager->whereDate('created_at', '<=', $filterValue);
+            }
+        }
 
         $posts = $postManager->paginate($pagination);
 
@@ -44,5 +56,16 @@ class PublicController extends BasePublicController
         $post = $this->post->findBySlug($slug);
 
         return view('blog.show', compact('post'));
+    }
+
+    /**
+     * @param $date
+     * @param string $format
+     * @return bool
+     */
+    private function validateDate($date, $format = 'Y-m-d H:i:s')
+    {
+        $d = \DateTime::createFromFormat($format, $date);
+        return $d && $d->format($format) == $date;
     }
 }
