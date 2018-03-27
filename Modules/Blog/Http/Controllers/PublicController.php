@@ -29,14 +29,9 @@ class PublicController extends BasePublicController
         // Posts com status publicado (published)
         $postManager->where('status', '=', 2);
 
-        $filters = $request->request->all();
-
-        foreach ($filters as $filter => $value) {
-            $filterValues = explode(',', $value);
-
-            if ($filter === "category") {
-                $postManager->whereIn('category_id', $filterValues);
-            }
+        if ($values = $request->get('category')) {
+            $filterValues = explode(',', $values);
+            $postManager->whereIn('category_id', $filterValues);
         }
 
         $posts = $postManager->paginate($pagination);
