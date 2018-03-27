@@ -29,8 +29,8 @@ class PublicController extends BasePublicController
         // Posts com status publicado (published)
         $postManager->where('status', '=', 2);
 
-        if ($values = $request->get('category')) {
-            $filterValues = explode(',', $values);
+        if ($categories = $request->get('category')) {
+            $filterValues = explode(',', $categories);
             $postManager->whereIn('category_id', $filterValues);
         }
 
