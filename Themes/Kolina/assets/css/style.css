@@ -777,7 +777,7 @@ form label.error { display: none !important; }
 .statistics .stat-col .stat-top .counter { font-family: "Poppins", sans-serif; font-weight: 600; font-size: 36px; color: #356bb0; }
 
 /* ========================================================================== 9.0 Testimonial ========================================================================== */
-.quotes { margin-top: 60px; }
+.quotes { margin-top: 0px; }
 .quotes:first-child { margin-top: 0; }
 .quotes .quotes-text { padding: 30px 0; font-size: 1.125em; font-style: italic; }
 .quotes .quotes-text h4, .quotes .quotes-text h5, .quotes .quotes-text h3 { font-style: normal; }
@@ -1520,6 +1520,21 @@ a:hover > .feature.boxed { transform: translateY(-10px); }
 
 textarea {
   resize: vertical;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.panel-custom-sices {
+  border-color: #F9A51C;
+}
+.panel-custom-sices > .panel-heading {
+  background: #000000;
+  color: #F9A51C;
+  border-color: #F9A51C;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 479px) { .page-typo .col-md-3.col-sm-6.col-xs-6 { width: 100%; } }
