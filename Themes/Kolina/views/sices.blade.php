@@ -8,14 +8,15 @@
 
     @include('partials.loading-modal')
 
-    <!-- Banner -->
-    <div class="banner" align="center">
-        <img src="{{ Theme::url('img/sices_header.png') }}" class="responsive-image" />
-    </div>
-    <!-- End Banner -->
-
     <div class="container" style="padding-bottom: 20px">
-        <div class="row">
+
+        <!-- Banner -->
+        <div class="banner" align="center">
+            <img src="{{ Theme::url('img/sices_header.png') }}" class="responsive-image" />
+        </div>
+        <!-- End Banner -->
+
+        <div class="row" style="padding-top: 10px">
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-6">
