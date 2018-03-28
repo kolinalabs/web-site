@@ -85,15 +85,15 @@ Esclarecimentos gerais relacionados à documentação:
   1. Instalar o COMPOSER: https://getcomposer.org/
   2. Criar uma database no MySQL, ex: kolina_website.
   3. Clonar o repositório.
-  4. Entrar na pasta do repositório pelo terminal.
-  5. Rodar o comando: 'php artisan asgard:install' e seguir os passos.
-  6. Rodar o comando: 'php artisan key:generate'.
-  7. Rodar o comando: 'composer install'.
-  8. Rodar o comando: 'php artisan serve'.
-  9. Entrar e logar no painel administrativo na url: http://localhost:8000/backend
-  10. Ir em Workshop > Settings e em 'Front end template' escolher o template 'Kolina'
-  11. Ir em Workshop > Modules e ativar os módulos 'Block' e 'Blog' se não estiverem ativados.
-  12. Rodar o comando: 'php artisan migrate'
+  4. Rodar o comando: 'composer install'.
+  5. Entrar na pasta do repositório pelo terminal.
+  6. Rodar o comando: 'php artisan asgard:install' e seguir os passos.
+  7. Rodar o comando: 'php artisan key:generate'.
+  8. Rodar o comando: 'php artisan migrate'
+  9. Rodar o comando: 'php artisan serve'.
+  10. Entrar e logar no painel administrativo na url: http://localhost:8000/backend
+  11. Ir em Workshop > Settings e em 'Front end template' escolher o template 'Kolina'
+  12. Ir em Workshop > Modules e ativar os módulos 'Block' e 'Blog' se não estiverem ativados.
   13. Ir em Workshop > Users > Roles e clicar em Admin.
   14. Ir na aba 'Permissions' e em Block.blocks, Blog.posts e Blog.categories clicar em 'Allow all' e salvar.
   15. Ir em Content > Pages.
