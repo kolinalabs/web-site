@@ -51,7 +51,7 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ route('homepage') }}"  target="_self"> Home</a></li>
                     <li><a href="/en/sobre"  target="_self"> Sobre</a></li>
-                    <li><a href="/en/servicos"  target="_self"> Serviços</a></li>
+                    <li><a href="/en/sices-solar"  target="_self" style="color: #F9A51C"> Sices Solar</a></li>
                     <li><a href="{{ route('en.blog') }}"  target="_self"> Blog</a></li>
                     <li><a href="/en/contato"  target="_self"> Contato</a></li>
                     <li class="quote-btn"><a class="btn" href="/solicitar"  target="_self" class="quote-btn"> Solicitar</a></li>
