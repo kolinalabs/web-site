@@ -15,7 +15,7 @@ Site da KolinaLabs implementado por meio da plataforma open source (licença MIT
 
   ## Guia Geral
 
-Esclarecimentos gerais relacionados a documentação:
+Esclarecimentos gerais relacionados à documentação:
 
   <a name="guia--nomenclaturas"></a><a name="1.1"></a>
   - [1.1](#guia--nomenclaturas) **Nomenclaturas**:
@@ -38,18 +38,16 @@ Esclarecimentos gerais relacionados a documentação:
   <a name="workflow--ferramentas"></a><a name="2.1"></a>
   - [2.1](#workflow--ferramentas) **Ferramentas**:
 
-    - [Waffle](https://waffle.io/sices/sices/join): Gerenciamento de tarefas (issues)
-    - [Trello](https://trello.com/b/jA3wpbqG/sices-roadmap): Acompanhamento de roadmap (cards)
-    - [Github](https://github.com/sices/sices): Versionamento
+    - [BucketBoard](https://bitbucket.org/joaozaqueu/kolina_site/addon/bucketboard/board): Gerenciamento de tarefas (issues)
+    - [BitBucket](https://bitbucket.org/joaozaqueu/kolina_site/s): Versionamento
     - [Slack](https://kolinalabs-si.slack.com/messages): Chat e bots
-    - [Hangout](https://hangouts.google.com/?hl=pt-BR): Calls
 
   <a name="workflow--fluxo"></a><a name="2.2"></a>
   - [2.2](#workflow--fluxo) **Levantamento e distribuição de tarefas**:
 
     - 2.2.1. Draft (BitBucket):
 
-      Consiste no levantamento de demanda semanal em reunião de equipe técnica com equipe de produto, onde são debatidas e anotadas todas as solicitações para serem convertidas em roadmap posteriormente.
+      Consiste no levantamento de demanda em reunião de equipe interna, onde são definidas as tarefas.
 
     - 2.2.2. Tasks (Bucket Board):
 
@@ -59,7 +57,7 @@ Esclarecimentos gerais relacionados a documentação:
   - [2.3](#workflow--tarefas) **Ciclo de vida de Tarefas**:
 
     - Para cada tarefa há um prazo máximo de execução de 2 dias;
-    - Caso a execução de uma tarefa ultrapasse 2 dias a mesma deve ser reavaliada pela a equipe;
+    - Caso a execução de uma tarefa ultrapasse 2 dias a mesma deve ser reavaliada pela equipe;
     - Tarefas devem ser quebradas em caso de:
       - Tarefas muito grandes;
       - Tarefas que modifiquem diversas áreas distintas do projeto;
@@ -87,6 +85,7 @@ Esclarecimentos gerais relacionados a documentação:
     ## Instalações da Aplicação
 
   <a name="aplicacao--instacao"></a><a name="3.1"></a>
+  - [3.1](#aplicacao--instacao) **Geral**:
   ```
   1. Instalar o COMPOSER: https://getcomposer.org/
   2. Criar uma database no MySQL, ex: kolina_website.
@@ -111,8 +110,8 @@ Esclarecimentos gerais relacionados a documentação:
     - Sices Solar, com page template 'sices' e título 'Sices Solar'.
     - IMPORTANTE: Deixar a checkbox 'Status' marcada e em 'Body' apenas escrever 'Conteúdo'.
     - IMPORTANTE: Clicar em generate em 'Slug' após escrever o título.
-  17. Ir em Content > Blocks e criar os blocos 'telefone' e 'email'.
-    - IMPORTANTE: Deixar a checkbox online marcada.
+  17. Ir em Content > Blocks e criar os blocos 'telefone' e 'email' e preencer com os devidos valores.
+    - IMPORTANTE: Deixar a checkbox 'Online' marcada.
   18. Editar o arquivo .env e adicionar os parametros:
     - CAPTCHA_SECRET=SECRET
     - CAPTCHA_SITEKEY=SITEKEY
@@ -123,8 +122,8 @@ Esclarecimentos gerais relacionados a documentação:
 
 ## Sobre
 
-  <a name="sobre--equipe"></a><a name="11.1"></a>
-  - [11.1](#sobre--equipe) **A equipe**:
+  <a name="sobre--equipe"></a><a name="4.1"></a>
+  - [4.1](#sobre--equipe) **A equipe**:
 
     - #### Alisson Alves
     ```
