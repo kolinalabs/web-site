@@ -10,9 +10,7 @@
 
     <!-- Banner -->
     <div class="banner" align="center">
-        <div class="img">
-            <img src="{{ Theme::url('img/sices_header.png') }}" alt="" />
-        </div>
+        <img src="{{ Theme::url('img/sices_header.png') }}" class="responsive-image" />
     </div>
     <!-- End Banner -->
 
@@ -48,32 +46,21 @@
                         <div class="panel panel-custom-sices">
                             <div class="panel-heading">Tecnologias</div>
                             <div class="panel-body">
-
                                 <div class="row">
                                     <div class="col-md-2 col-md-offset-1">
-                                        <div class="img">
-                                            <img src="{{ Theme::url('img/tech_sf.png') }}" alt="" />
-                                        </div>
+                                        <img src="{{ Theme::url('img/tech_sf.png') }}" class="responsive-image" />
                                     </div>
                                     <div class="col-md-2">
-                                        <div class="img">
-                                            <img src="{{ Theme::url('img/tech_vue.png') }}" alt="" />
-                                        </div>
+                                        <img src="{{ Theme::url('img/tech_vue.png') }}" class="responsive-image" />
                                     </div>
                                     <div class="col-md-2">
-                                        <div class="img">
-                                            <img src="{{ Theme::url('img/tech_aws.png') }}" alt="" />
-                                        </div>
+                                        <img src="{{ Theme::url('img/tech_aws.png') }}" class="responsive-image" />
                                     </div>
                                     <div class="col-md-2">
-                                        <div class="img">
-                                            <img src="{{ Theme::url('img/tech_git.png') }}" alt="" />
-                                        </div>
+                                        <img src="{{ Theme::url('img/tech_git.png') }}" class="responsive-image" />
                                     </div>
                                     <div class="col-md-2">
-                                        <div class="img">
-                                            <img src="{{ Theme::url('img/tech_mysql.png') }}" alt="" />
-                                        </div>
+                                        <img src="{{ Theme::url('img/tech_mysql.png') }}" class="responsive-image" />
                                     </div>
                                 </div>
                             </div>
