@@ -92,9 +92,9 @@ Esclarecimentos gerais relacionados a documentação:
   2. Criar uma database no MySQL, ex: kolina_website.
   3. Clonar o repositório.
   4. Entrar na pasta do repositório pelo terminal.
-  5. Rodar o comando: 'composer install'.
-  6. Rodar o comando: 'php artisan asgard:install' e seguir os passos.
-  7. Rodar o comando: 'php artisan key:generate'.
+  5. Rodar o comando: 'php artisan asgard:install' e seguir os passos.
+  6. Rodar o comando: 'php artisan key:generate'.
+  7. Rodar o comando: 'composer install'.
   8. Rodar o comando: 'php artisan serve'.
   9. Entrar e logar no painel administrativo na url: http://localhost:8000/backend
   10. Ir em Workshop > Settings e em 'Front end template' escolher o template 'Kolina'
