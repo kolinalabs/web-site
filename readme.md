@@ -21,14 +21,9 @@ Esclarecimentos gerais relacionados à documentação:
   - [1.1](#guia--nomenclaturas) **Nomenclaturas**:
 
     - Issues: tarefas
-
-  <a name="guia--siglas"></a><a name="1.2"></a>
-  - [1.2](#guia--siglas) **Siglas**:
-
-    - PR: Pull Request
-
+    
   <a name="guia--notas"></a><a name="1.3"></a>
-  - [1.3](#guia--notas) **Notas Gerais**:
+  - [1.2](#guia--notas) **Notas Gerais**:
 
     - Em comandos, os colchetes `[]` delimitam que alguns conteúdos devem ser preenchidos em seu lugar;
     - A distro Ubuntu 16.04 foi utilizada como base de referência para a elaboração desta documentação, em outras distribuições podem ocorrer pequenas variações.
