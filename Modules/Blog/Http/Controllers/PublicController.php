@@ -51,6 +51,11 @@ class PublicController extends BasePublicController
                 $postManager->whereDate('created_at', '<=', $filterValue);
             }
         }
+        if ($search = $request->get('search')) {
+            $postManager->join('blog__post_translations','blog__posts.id','=','blog__post_translations.post_id');
+            $postManager->where('blog__post_translations.title', 'LIKE', '%'. $search . '%');
+            $postManager->orWhere('blog__post_translations.content','LIKE', '%'. $search . '%');
+        }
 
         $posts = $postManager->get();
 
