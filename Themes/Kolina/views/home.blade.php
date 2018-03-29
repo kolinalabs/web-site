@@ -429,61 +429,52 @@
                 <h3 class="heading-section">Consulting Experts News</h3>
                 <div class="gaps"></div>
                 <div class="blog-posts">
-                    <div class="row">
-                        <!-- // -->
-                        <div class="post post-boxed col-md-4 col-sm-6 res-s-bttm-lg">
-                            <div class="post-thumbs">
-                                <a href="#"><img alt="" src="{{ Theme::url('img/news-a.jpg') }}"></a>
-                                <div class="post-meta"><span class="pub-date"><strong>29</strong> Sep</span></div>
-                            </div>
-                            <div class="post-entry">
 
-                                <h3><a href="#">Income Increase Shows the Recovery Is Very Much</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt laboris nisi ut aliquip exeo...</p>
-                                <a class="btn btn-alt" href="#">Read More</a>
-                            </div>
-                        </div>
-                        <!-- // -->
-                        <div class="post post-boxed col-md-4 col-sm-6">
-                            <div class="post-thumbs">
-                                <a href="#"><img alt="" src="{{ Theme::url('img/news-b.jpg') }}"></a>
-                                <div class="post-meta"><span class="pub-date"><strong>12</strong> Sep</span></div>
-                            </div>
-                            <div class="post-entry">
-                                <h3><a href="#">An Economics Nobel awarded for Examining</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt laboris nisi ut aliquip post...</p>
-                                <a class="btn btn-alt" href="#">Read More</a>
-                            </div>
-                        </div>
-                        <!-- // -->
+                    <?php $posts = \Modules\Page\Http\Controllers\Api\BlogPostsController::getLatestBlogPosts() ?>
+
+                    <div class="row">
+                        <?php for ($i = 0; $i < count($posts); $i++): ?>
+                        <?php
+                            $post_array = $posts[$i]->files()->first();
+
+                            if (is_null($post_array)) {
+                                $postThumbnail = Theme::url('img/news-a.jpg');
+                            } else {
+                                $postThumbnail = $post_array;
+                            }
+                        ?>
+
+                            <?php if ($i < 2): ?>
+                                <div class="post post-boxed col-md-4 col-sm-6 res-s-bttm-lg">
+                                    <div class="post-thumbs">
+                                        <a href="#"><img alt="" src="{{ $postThumbnail }}"></a>
+                                        <div class="post-meta"><span class="pub-date"><strong>{{ $posts[$i]->created_at->format('d') }}</strong> {{ $posts[$i]->created_at->format('m') }}</span></div>
+                                    </div>
+                                    <div class="post-entry">
+                                        <h3><a href="{{ URL::route($currentLocale . '.blog.slug', [$posts[$i]->slug]) }}">{{ $posts[$i]->title }}</a></h3>
+                                        <?php echo str_limit($posts[$i]->content, 150) ?>
+                                        <br>
+                                        <br>
+                                        <a class="btn btn-alt" href="{{ URL::route($currentLocale . '.blog.slug', [$posts[$i]->slug]) }}">Leia Mais</a>
+                                    </div>
+                                </div>
+                            <?php endif; ?>
+                        <?php endfor; ?>
                         <div class="gaps size-2x hidden-lg hidden-md"></div>
                         <div class="col-md-4 col-sm-12">
+                            <?php if (count($posts) >= 2): ?>
                             <ul class="news-recent">
+                                <?php for ($i = 2; $i < count($posts); $i++): ?>
+                                <?php $post_array = $posts[$i]->files()->first(); ?>
                                 <li>
+                                    <img alt="" src="{{ Theme::url('img/news-thumb-d.jpg') }}">
                                     <a href="#">
-                                        <img alt="" src="{{ Theme::url('img/news-thumb-d.jpg') }}">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit volup accus antium doloremque laudantiu...</p>
+                                        <?php echo str_limit($posts[$i]->content, 100) ?>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        <img alt="" src="{{ Theme::url('img/news-thumb-c.jpg') }}">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit volup accus antium doloremque laudantiu...</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img alt="" src="{{ Theme::url('img/news-thumb-b.jpg') }}">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit volup accus antium doloremque laudantiu...</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img alt="" src="{{ Theme::url('img/news-thumb-a.jpg') }}">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit volup accus antium doloremque laudantiu...</p>
-                                    </a>
-                                </li>
+                                <?php endfor; ?>
                             </ul>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>

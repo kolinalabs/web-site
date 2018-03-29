@@ -962,7 +962,7 @@ form label.error { display: none !important; }
 .news-recent li:first-child { padding-top: 0; }
 .news-recent li:last-child { padding-bottom: 0px; border-bottom: 0 none; }
 .news-recent li img { float: left; max-width: 100px; margin-top: 2px; margin-right: 15px; height: auto; opacity: 1; transition: opacity 350ms; -ms-border-radius: 5px; border-radius: 5px; }
-.news-recent li a { display: inline-block; color: #777; }
+.news-recent li a { color: #777; }
 .news-recent li:hover a { color: #356aa0; }
 .news-recent li:hover img { opacity: 0.5; }
 

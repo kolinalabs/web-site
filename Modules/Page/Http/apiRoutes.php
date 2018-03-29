@@ -17,6 +17,11 @@ $router->post('/request', [
     'uses' => 'FormController@requestForm'
 ]);
 
+$router->get('/latest-blog-posts', [
+    'as' => 'latestBlogPosts',
+    'uses' => 'BlogPostsController@getLatestBlogPosts'
+]);
+
 $router->group(['prefix' => '/page', 'middleware' => ['api.token', 'auth.admin']], function (Router $router) {
     $router->get('pages', [
         'as' => 'api.page.page.index',
