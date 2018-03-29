@@ -58,7 +58,7 @@
                             </ul>
                             <?php endif; ?>
                         </div>
-                        {!! $posts->render() !!}
+                        {!! $paginator->render() !!}
                         <div class="clear"></div>
                     </div>
 
