@@ -147,15 +147,10 @@
 	}
 	// Google map initialize
 	var $mapholder = $('.map-holder');
-	if ($mapholder.length > 0) {
-		var map = new GMaps({
-		  div: '#gmap',
-		  lat: -12.043333,
-		  lng: -77.028333
-		});
-		$mapholder.on('click', function () { $(this).children().css("pointer-events", "auto"); });
-		$mapholder.on('mouseleave', function() { $(this).children().css("pointer-events", "none"); });
-	}
+
+    $mapholder.on('click', function () { $(this).children().css("pointer-events", "auto"); });
+	$mapholder.on('mouseleave', function() { $(this).children().css("pointer-events", "none"); });
+
 })(jQuery);
 
 $(document).ready(function () {
@@ -170,3 +165,15 @@ $(document).ready(function () {
 
     $('.phone').mask(SPMaskBehavior, spOptions);
 });
+
+function initMap() {
+    var uluru = {lat: -25.3897686, lng: -51.4665143};
+    var map = new google.maps.Map(document.getElementById('gmap'), {
+        zoom: 18,
+        center: uluru
+    });
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+    });
+}

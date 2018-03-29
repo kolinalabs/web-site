@@ -22,11 +22,10 @@
 @yield('content')
 @include('partials.footer')
 
-{!! Theme::script('js/gmaps.js') !!}
-<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAYoHWIujTe-tHh7lPbpHoeCU5F9iOjD_8"></script>
 {!! Theme::script('js/jquery.bundle.js') !!}
 {!! Theme::script('js/jquery.mask.js') !!}
 {!! Theme::script('js/script.js') !!}
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAYoHWIujTe-tHh7lPbpHoeCU5F9iOjD_8&callback=initMap"></script>
 <script src='//www.google.com/recaptcha/api.js'></script>
 
 <?php if (Setting::has('core::analytics-script')): ?>
