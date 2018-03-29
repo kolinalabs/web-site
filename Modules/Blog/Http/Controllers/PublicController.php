@@ -3,6 +3,7 @@
 namespace Modules\Blog\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Pagination\LengthAwarePaginator;
 use Modules\Blog\Entities\Post;
 use Modules\Blog\Repositories\PostRepository;
 use Modules\Core\Http\Controllers\BasePublicController;
@@ -23,6 +24,11 @@ class PublicController extends BasePublicController
     public function index(Request $request)
     {
         $pagination = 6;
+        $page = 1;
+
+        if ($request->get('page')) {
+            $page = (int) $request->get('page');
+        }
 
         $postManager = Post::query();
 
@@ -46,9 +52,36 @@ class PublicController extends BasePublicController
             }
         }
 
-        $posts = $postManager->paginate($pagination);
+        $posts = $postManager->get();
 
-        return view('blog.index', compact('posts'));
+        if ($tags = $request->get('tag')) {
+            $filterValues = explode(',', $tags);
+
+            foreach ($posts as $key => $post) {
+
+                $currentPostTags = [];
+
+                foreach ($post->tags as $tag) {
+
+                    $tagName = $tag->translate()->getAttributes()['name'];
+
+                    array_push($currentPostTags, $tagName);
+                }
+
+                if (count(array_intersect($filterValues, $currentPostTags)) <= 0) {
+                    $posts->forget($key);
+                }
+            }
+        }
+
+        $paginator = new LengthAwarePaginator(
+            $posts->forPage($page, $pagination),
+            count($posts),
+            $pagination,
+            $page
+        );
+
+        return view('blog.index')->with(compact('posts','paginator'));
     }
 
     public function show($slug)
