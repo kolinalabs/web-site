@@ -626,7 +626,7 @@ form label.error { display: none !important; }
 .is-transparent .banner-slider { min-height: 640px; }
 .banner-slider .carousel-inner .item { transition-property: opacity; }
 .banner-slider .carousel-inner .item, .banner-slider .carousel-inner .active.left, .banner-slider .carousel-inner .active.right { opacity: 0; }
-.banner-slider .carousel-inner .active, .banner-slider .carousel-inner .next.left, .banner-slider .carousel-inner .prev.right { opacity: 1; }
+.banner-slider .carousel-inner .active, .banner-slider .carousel-inner .next.left, .banner-slider .carousel-inner .prev.right { opacity: 100; }
 .banner-slider .carousel-inner .next, .banner-slider .carousel-inner .prev, .banner-slider .carousel-inner .active.left, .banner-slider .carousel-inner .active.right { left: 0; transform: translate3d(0, 0, 0); }
 .banner-slider .banner-content { position: relative; top: 50%; transform: translate(0, -50%); }
 .banner-slider .banner-text { width: 100%; max-width: 520px; position: relative; padding-top: 0; padding-bottom: 0; }
