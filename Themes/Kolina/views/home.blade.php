@@ -21,11 +21,11 @@
                             <div class="row">
                                 <div class="banner-text al-left pos-left dark">
                                     <div class="animated fadeInUp">
-                                        <h2>Consulting + Planning</h2>
-                                        <p class="lead">No matter how complex your business questions, we have the capabilities and experience to deliver the answers you need to move forward.</p>
+                                        <h2>Consultoria e planejamento</h2>
+                                        <p class="lead">Conte com uma equipe experiente para o entendimento das complexidades de negócio de sua empresa.</p>
                                         <div class="banner-cta">
-                                            <a class="btn" href="#">Learn More</a>
-                                            <a class="btn btn-alt btn-outline" href="#">Our Services</a>
+                                            <a class="btn" href="/sobre">Sobre</a>
+                                            <a class="btn btn-alt btn-outline" href="/sices-solar">Sices Solar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -42,11 +42,11 @@
                             <div class="row">
                                 <div class="banner-text al-left pos-left dark">
                                     <div class="animated fadeInUp">
-                                        <h2>Getting business results!</h2>
-                                        <p class="lead">As the world’s largest consulting firm, we can help you take decisive action and achieve sustainable results.</p>
+                                        <h2>Obtenção de resultados</h2>
+                                        <p class="lead">Invista no caminho certo para obtenção de resultados sustentáveis. Somo especialistas em conduzir soluções.</p>
                                         <div class="banner-cta">
-                                            <a class="btn" href="#">Learn More</a>
-                                            <a class="btn btn-alt" href="#">Free Consultation</a>
+                                            <a class="btn" href="/sobre">Sobre</a>
+                                            <a class="btn btn-alt" href="/solicitar">Orçamento Gratuito</a>
                                         </div>
                                     </div>
                                 </div>
@@ -61,13 +61,13 @@
                     <div class="banner-content">
                         <div class="container">
                             <div class="row">
-                                <div class="banner-text al-left pos-left light">
+                                <div class="banner-text al-left pos-left dark">
                                     <div class="animated fadeInUp">
-                                        <h2>Advanced Analytics</h2>
-                                        <p class="lead">To realize the value of big data, organizations need strategic—and not merely technological—solutions.</p>
+                                        <h2>Tecnologia inteligente</h2>
+                                        <p class="lead">Soluções estratégicas para fornecer produtos que auxiliem sua empresa na percepção do negócio.</p>
                                         <div class="banner-cta">
-                                            <a class="btn" href="#">Learn More</a>
-                                            <a class="btn btn-light btn-outline" href="#">Contact Us</a>
+                                            <a class="btn" href="/sobre">Sobre</a>
+                                            <a class="btn btn-light btn-outline" href="/contato">Contato</a>
                                         </div>
                                     </div>
                                 </div>
@@ -81,11 +81,11 @@
         <!-- Arrow Controls -->
         <a class="left carousel-control" href="#slider" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span class="sr-only">Anterior</span>
         </a>
         <a class="right carousel-control" href="#slider" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span class="sr-only">Proximo</span>
         </a>
     </div>
     <!-- #end Banner/Slider -->
@@ -99,15 +99,12 @@
                     <div class="col-sm-4">
                         <!-- feature box -->
                         <div class="feature feature-s6 boxed">
-                            <a href="#">
-                                <div class="fbox-photo">
-                                    <img src="{{ Theme::url('img/home-service-a.jpg') }}" alt="">
-                                </div>
-                            </a>
+                            <div class="fbox-photo">
+                                <img src="{{ Theme::url('img/home-service-a.jpg') }}" alt="">
+                            </div>
                             <div class="fbox-content">
-                                <h3><a href="#">Business Planning</a></h3>
-                                <p>Planning is the single most important part of success, poor planning can result in a lot of lost time...</p>
-                                <p><a href="#" class="btn-link">Read More</a></p>
+                                <h3>Objetividade</h3>
+                                <p>Entendendo as reais necessidades de sua empresa, auxiliamos na obtenção de resultados relevantes.</p>
                             </div>
                         </div>
                         <!-- End Feature box -->
@@ -115,15 +112,12 @@
                     <div class="col-sm-4">
                         <!-- feature box -->
                         <div class="feature feature-s6 boxed">
-                            <a href="#">
-                                <div class="fbox-photo">
-                                    <img src="{{ Theme::url('img/home-service-b.jpg') }}" alt="">
-                                </div>
-                            </a>
+                            <div class="fbox-photo">
+                                <img src="{{ Theme::url('img/home-service-b.jpg') }}" alt="">
+                            </div>
                             <div class="fbox-content">
-                                <h3><a href="#">Investment Planning</a></h3>
-                                <p>We work with our clients and do a deep research of their business. We help prepare possible outcomes...</p>
-                                <p><a href="#" class="btn-link">Read More</a></p>
+                                <h3>Qualidade</h3>
+                                <p>Atuação integrada entre equipe e cliente nos processos de validação, verificação e testes.</p>
                             </div>
                         </div>
                         <!-- End Feature box -->
@@ -131,15 +125,12 @@
                     <div class="col-sm-4">
                         <!-- feature box -->
                         <div class="feature feature-s6 boxed">
-                            <a href="#">
-                                <div class="fbox-photo">
-                                    <img src="{{ Theme::url('img/home-service-c.jpg') }}" alt="">
-                                </div>
-                            </a>
+                            <div class="fbox-photo">
+                                <img src="{{ Theme::url('img/home-service-c.jpg') }}" alt="">
+                            </div>
                             <div class="fbox-content">
-                                <h3><a href="#">Audit &amp; Assurance</a></h3>
-                                <p>Audit and assurance is all about data analysis. Everything needs to be checked, double checked and triple...</p>
-                                <p><a href="#" class="btn-link">Read More</a></p>
+                                <h3>Visão</h3>
+                                <p>Soluções escaláveis, que permitem a expansão de resultados e adaptação às mudanças.</p>
                             </div>
                         </div>
                         <!-- End Featur box -->
@@ -157,10 +148,11 @@
             <div class="content row row-vm">
                 <div class="col-md-6 npl res-m-bttm">
                     <div class="text-left comm-heading">
-                        <h3 class="heading-section">Company At A Glance</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a enim aliquam, condimentum nisl a, laoreet lectus. Aliquam convallis sed elit nec vehicula. Praesent gravida, massa sit amet ullamcorper fringilla, tortor nunc ultrices dui porttitor mi non, elementum dui.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a enim aliquam, condimentum nisl a, laoreet lectus.</p>
-                        <a href="about.html" class="btn">About us</a>
+                        <h3 class="heading-section">Inovando soluções</h3>
+                        <p>A visão das necessidades como algo único, nos possibilita flexibilizar as soluções de forma que atendam exatamente a demanda exigida.</p>
+                        <p>Nós da KolinaLabs, compreendemos os problemas como algo que pode ser similar mas nunca idêntico. Isto permite inovar constantemente as soluções desenvolvidas, aplicando o talento e a experiência de nossa equipe na simplificação das complexidades, avaliando possibilidades, riscos e principalmente resultados.</p>
+                        <p>A essência da inovação é a criatividade.</p>
+                        <a href="/sobre" class="btn">Sobre nós</a>
                     </div>
                 </div>
                 <div class="col-md-5 col-lg-offset-1 npr">
@@ -176,249 +168,155 @@
             <div class="content row">
                 <div class="col-lg-12">
                     <div class="wide-sm center">
-                        <h2>Consulting services for industries</h2>
+                        <h2>Consultorias</h2>
                         <div class="gaps size-xs"></div>
-                        <p class="lead">Our industry consultants help address your most challenging issues by providing strategic, financial, operational, human capital, and IT services.</p>
+                        <p class="lead">As necessidades de sua empresa entendidas por uma equipe de alto nível. Nossa atuação visa compreender e propor soluções com base na sua realidade.</p>
                         <div class="gaps"></div>
-                        <a href="#" class="btn btn-light">Free Cosultation</a>
+                        <a href="/solicitar" class="btn btn-light">Solicitar</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- end Content -->
-    <!-- Team -->
-    <div class="section section-pad">
-        <div class="container">
-            <div class="content row">
-
-                <h3 class="heading-section">Our Experts</h3>
-                <div class="gaps"></div>
-                <div class="team-member-row row mgtop">
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- Team Profile -->
-                        <div class="team-member team-s2">
-                            <div class="team-photo">
-                                <img alt="" src="{{ Theme::url('img/team-a.jpg') }}">
-                                <div class="team-social">
-                                    <ul>
-                                        <li><a href="#" class="fa fa-facebook"></a></li>
-                                        <li><a href="#" class="fa fa-twitter"></a></li>
-                                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="team-info">
-                                <h4 class="name">Brandon Auger</h4>
-                                <p class="sub-title">Corporate Consultant</p>
-                            </div>
-                        </div>
-                        <!-- Team #end -->
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- Team Profile -->
-                        <div class="team-member team-s2">
-                            <div class="team-photo">
-                                <img alt="" src="{{ Theme::url('img/team-b.jpg') }}">
-                                <div class="team-social">
-                                    <ul>
-                                        <li><a href="#" class="fa fa-facebook"></a></li>
-                                        <li><a href="#" class="fa fa-twitter"></a></li>
-                                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="team-info">
-                                <h4 class="name">Domenick Bertelli</h4>
-                                <p class="sub-title">Business Consultant</p>
-                            </div>
-                        </div>
-                        <!-- Team #end -->
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- Team Profile -->
-                        <div class="team-member team-s2">
-                            <div class="team-photo">
-                                <img alt="" src="{{ Theme::url('img/team-c.jpg') }}">
-                                <div class="team-social">
-                                    <ul>
-                                        <li><a href="#" class="fa fa-facebook"></a></li>
-                                        <li><a href="#" class="fa fa-twitter"></a></li>
-                                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="team-info">
-                                <h4 class="name">Joseph Feingold</h4>
-                                <p class="sub-title">Retirement Consultant</p>
-                            </div>
-                        </div>
-                        <!-- Team #end -->
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <!-- Team Profile -->
-                        <div class="team-member team-s2">
-                            <div class="team-photo">
-                                <img alt="" src="{{ Theme::url('img/team-d.jpg') }}">
-                                <div class="team-social">
-                                    <ul>
-                                        <li><a href="#" class="fa fa-facebook"></a></li>
-                                        <li><a href="#" class="fa fa-twitter"></a></li>
-                                        <li><a href="#" class="fa fa-linkedin"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="team-info">
-                                <h4 class="name">Scott Briggs</h4>
-                                <p class="sub-title">Business Consultant</p>
-                            </div>
-                        </div>
-                        <!-- Team #end -->
-                    </div>
-                </div><!-- TeamRow #end -->
-
-            </div>
-        </div>
-    </div>
-    <!-- End Section -->
     <!-- Testimonials -->
-    <div class="section section-quotes section-pad bg-light testimonials">
-        <div class="container">
-            <div class="content row">
+    {{--<div class="section section-quotes section-pad bg-light testimonials">--}}
+        {{--<div class="container">--}}
+            {{--<div class="content row">--}}
 
 
-                <h3 class="heading-section">What Our Client Say's</h3>
-                <div class="gaps"></div>
-                <div class="testimonials">
-                    <div id="testimonial" class="quotes-slider quotes-slider-v2 quotes-boxed">
-                        <div class="owl-carousel loop has-carousel" data-items="3" data-loop="true" data-dots="true" data-auto="true">
-                            <div class="item">
-                                <!-- Each Quotes -->
-                                <div class="quotes quotes-v2">
-                                    <div class="quotes-text">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.</p>
-                                        <div class="star">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <div class="profile-thumb">
-                                        <img src="{{ Theme::url('img/client-a.jpg') }}" alt="">
-                                    </div>
-                                    <div class="profile">
-                                        <h5>John Doe</h5>
-                                        <h6>CEO, Company Name</h6>
-                                    </div>
-                                </div>
-                                <!-- End Quotes -->
-                            </div>
-                            <!-- // -->
-                            <div class="item">
-                                <!-- Each Quotes -->
-                                <div class="quotes quotes-v2">
-                                    <div class="quotes-text">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo Nemo enim ipsam.</p>
-                                        <div class="star">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <div class="profile-thumb">
-                                        <img src="{{ Theme::url('img/client-b.jpg') }}" alt="">
-                                    </div>
-                                    <div class="profile">
-                                        <h5>John Doe</h5>
-                                        <h6>CEO, Company Name</h6>
-                                    </div>
-                                </div>
-                                <!-- End Quotes -->
-                            </div>
-                            <!-- // -->
-                            <div class="item">
-                                <!-- Each Quotes -->
-                                <div class="quotes quotes-v2">
-                                    <div class="quotes-text">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo Nemo enim ipsam.</p>
-                                        <div class="star">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <div class="profile-thumb">
-                                        <img src="{{ Theme::url('img/client-c.jpg') }}" alt="">
-                                    </div>
-                                    <div class="profile">
-                                        <h5>John Doe</h5>
-                                        <h6>CEO, Company Name</h6>
-                                    </div>
-                                </div>
-                                <!-- End Quotes -->
-                            </div>
-                            <!-- // -->
-                            <div class="item">
-                                <!-- Each Quotes -->
-                                <div class="quotes quotes-v2">
-                                    <div class="quotes-text">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo Nemo enim ipsam.</p>
-                                        <div class="star">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <div class="profile-thumb">
-                                        <img src="{{ Theme::url('img/client-a.jpg') }}" alt="">
-                                    </div>
-                                    <div class="profile">
-                                        <h5>John Doe</h5>
-                                        <h6>CEO, Company Name</h6>
-                                    </div>
-                                </div>
-                                <!-- End Quotes -->
-                            </div>
-                            <!-- // -->
-                            <div class="item">
-                                <!-- Each Quotes -->
-                                <div class="quotes quotes-v2">
-                                    <div class="quotes-text">
-                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo Nemo enim ipsam.</p>
-                                        <div class="star">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                    <div class="profile-thumb">
-                                        <img src="{{ Theme::url('img/client-b.jpg') }}" alt="">
-                                    </div>
-                                    <div class="profile">
-                                        <h5>John Doe</h5>
-                                        <h6>CEO, Company Name</h6>
-                                    </div>
-                                </div>
-                                <!-- End Quotes -->
-                            </div>
-                        </div>
-                        <!-- End LoopSlide -->
-                    </div>
-                </div>
+                {{--<h3 class="heading-section">What Our Client Say's</h3>--}}
+                {{--<div class="gaps"></div>--}}
+                {{--<div class="testimonials">--}}
+                    {{--<div id="testimonial" class="quotes-slider quotes-slider-v2 quotes-boxed">--}}
+                        {{--<div class="owl-carousel loop has-carousel" data-items="3" data-loop="true" data-dots="true" data-auto="true">--}}
+                            {{--<div class="item">--}}
+                                {{--<!-- Each Quotes -->--}}
+                                {{--<div class="quotes quotes-v2">--}}
+                                    {{--<div class="quotes-text">--}}
+                                        {{--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.</p>--}}
+                                        {{--<div class="star">--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="profile-thumb">--}}
+                                        {{--<img src="{{ Theme::url('img/client-a.jpg') }}" alt="">--}}
+                                    {{--</div>--}}
+                                    {{--<div class="profile">--}}
+                                        {{--<h5>John Doe</h5>--}}
+                                        {{--<h6>CEO, Company Name</h6>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                                {{--<!-- End Quotes -->--}}
+                            {{--</div>--}}
+                            {{--<!-- // -->--}}
+                            {{--<div class="item">--}}
+                                {{--<!-- Each Quotes -->--}}
+                                {{--<div class="quotes quotes-v2">--}}
+                                    {{--<div class="quotes-text">--}}
+                                        {{--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo Nemo enim ipsam.</p>--}}
+                                        {{--<div class="star">--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="profile-thumb">--}}
+                                        {{--<img src="{{ Theme::url('img/client-b.jpg') }}" alt="">--}}
+                                    {{--</div>--}}
+                                    {{--<div class="profile">--}}
+                                        {{--<h5>John Doe</h5>--}}
+                                        {{--<h6>CEO, Company Name</h6>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                                {{--<!-- End Quotes -->--}}
+                            {{--</div>--}}
+                            {{--<!-- // -->--}}
+                            {{--<div class="item">--}}
+                                {{--<!-- Each Quotes -->--}}
+                                {{--<div class="quotes quotes-v2">--}}
+                                    {{--<div class="quotes-text">--}}
+                                        {{--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo Nemo enim ipsam.</p>--}}
+                                        {{--<div class="star">--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="profile-thumb">--}}
+                                        {{--<img src="{{ Theme::url('img/client-c.jpg') }}" alt="">--}}
+                                    {{--</div>--}}
+                                    {{--<div class="profile">--}}
+                                        {{--<h5>John Doe</h5>--}}
+                                        {{--<h6>CEO, Company Name</h6>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                                {{--<!-- End Quotes -->--}}
+                            {{--</div>--}}
+                            {{--<!-- // -->--}}
+                            {{--<div class="item">--}}
+                                {{--<!-- Each Quotes -->--}}
+                                {{--<div class="quotes quotes-v2">--}}
+                                    {{--<div class="quotes-text">--}}
+                                        {{--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo Nemo enim ipsam.</p>--}}
+                                        {{--<div class="star">--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="profile-thumb">--}}
+                                        {{--<img src="{{ Theme::url('img/client-a.jpg') }}" alt="">--}}
+                                    {{--</div>--}}
+                                    {{--<div class="profile">--}}
+                                        {{--<h5>John Doe</h5>--}}
+                                        {{--<h6>CEO, Company Name</h6>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                                {{--<!-- End Quotes -->--}}
+                            {{--</div>--}}
+                            {{--<!-- // -->--}}
+                            {{--<div class="item">--}}
+                                {{--<!-- Each Quotes -->--}}
+                                {{--<div class="quotes quotes-v2">--}}
+                                    {{--<div class="quotes-text">--}}
+                                        {{--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo Nemo enim ipsam.</p>--}}
+                                        {{--<div class="star">--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                            {{--<i class="fa fa-star"></i>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="profile-thumb">--}}
+                                        {{--<img src="{{ Theme::url('img/client-b.jpg') }}" alt="">--}}
+                                    {{--</div>--}}
+                                    {{--<div class="profile">--}}
+                                        {{--<h5>John Doe</h5>--}}
+                                        {{--<h6>CEO, Company Name</h6>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                                {{--<!-- End Quotes -->--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                        {{--<!-- End LoopSlide -->--}}
+                    {{--</div>--}}
+                {{--</div>--}}
 
-            </div>
-        </div>
-    </div>
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
     <!-- End Section -->
 
     <!-- Latest News -->
@@ -426,7 +324,7 @@
         <div class="container">
             <div class="content row">
 
-                <h3 class="heading-section">Consulting Experts News</h3>
+                <h3 class="heading-section">Postagens recentes</h3>
                 <div class="gaps"></div>
                 <div class="blog-posts">
 
@@ -434,15 +332,15 @@
 
                     <div class="row">
                         <?php for ($i = 0; $i < count($posts); $i++): ?>
-                        <?php
-                            $post_array = $posts[$i]->files()->first();
+                            <?php
+                                $post_array = $posts[$i]->files()->first();
 
-                            if (is_null($post_array)) {
-                                $postThumbnail = Theme::url('img/news-a.jpg');
-                            } else {
-                                $postThumbnail = $post_array;
-                            }
-                        ?>
+                                if (is_null($post_array)) {
+                                    $postThumbnail = Theme::url('img/news-a.jpg');
+                                } else {
+                                    $postThumbnail = $post_array;
+                                }
+                            ?>
 
                             <?php if ($i < 2): ?>
                                 <div class="post post-boxed col-md-4 col-sm-6 res-s-bttm-lg">
@@ -452,7 +350,7 @@
                                     </div>
                                     <div class="post-entry">
                                         <h3><a href="{{ URL::route($currentLocale . '.blog.slug', [$posts[$i]->slug]) }}">{{ $posts[$i]->title }}</a></h3>
-                                        <?php echo str_limit($posts[$i]->content, 150) ?>
+                                        <?php echo str_limit($posts[$i]->content, 130) ?>
                                         <br>
                                         <br>
                                         <a class="btn btn-alt" href="{{ URL::route($currentLocale . '.blog.slug', [$posts[$i]->slug]) }}">Leia Mais</a>
@@ -491,9 +389,9 @@
                 <div class="content row">
 
                     <div class="cta-sameline">
-                        <h3>Looking for a greats consultantcy for your new business?</h3>
-                        <p>Contact us today by submit a business inquiry form online.</p>
-                        <a class="btn btn-outline" href="get-a-quote.html">Contact Us</a>
+                        <h3>Procurando uma solução tecnológica para seu novo negócio?</h3>
+                        <p>Entre em contato e obtenha a orientação de nossa equipe.</p>
+                        <a class="btn btn-outline" href="/contato">Contato</a>
                     </div>
 
                 </div>
